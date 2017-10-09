@@ -16,6 +16,8 @@ int main()
  
     struct sockaddr_in servaddr;
  
+    printf("Launching server......\n");
+ 
     listen_fd = socket(AF_INET, SOCK_STREAM, 0);
  
     bzero( &servaddr, sizeof(servaddr));
